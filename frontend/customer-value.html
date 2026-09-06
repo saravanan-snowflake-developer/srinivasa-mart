@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Srinivasa Mart - Customer Value</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="app-container">
+
+        <div class="main-layout">
+
+            <!-- CUSTOMER VALUE CARD -->
+
+            <main class="sale-card customer-value-page">
+
+                <!-- HEADER -->
+
+                <div class="customer-value-header">
+
+                    <div>
+
+                        <h1>
+                            Customer Value
+                        </h1>
+
+                        <p>
+                            Check and redeem customer value
+                        </p>
+
+                    </div>
+
+
+                    <!-- BACK BUTTON -->
+
+                    <button
+                        type="button"
+                        class="back-btn"
+                        onclick="window.location.href='index.html'"
+                    >
+                        ← Back
+                    </button>
+
+                </div>
+
+
+                <!-- CUSTOMER VALUE SEARCH -->
+
+                <div class="form-group">
+
+                    <label for="valuePhone">
+                        Customer Phone Number
+                    </label>
+
+
+                    <div class="phone-row">
+
+                        <input
+                            type="tel"
+                            id="valuePhone"
+                            maxlength="15"
+                            placeholder="Enter phone number"
+                            autocomplete="off"
+                        >
+
+
+                        <button
+                            type="button"
+                            id="checkCustomerValueBtn"
+                        >
+                            Search
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CUSTOMER NAME -->
+
+                <div class="form-group">
+
+                    <label for="valueCustomerName">
+                        Customer Name
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="valueCustomerName"
+                        placeholder="Customer name"
+                        readonly
+                    >
+
+                </div>
+
+
+                <!-- CUSTOMER VALUE -->
+
+                <div class="customer-value-display">
+
+                    <span>
+                        Customer Value
+                    </span>
+
+
+                    <strong id="customerValue">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <!-- REDEEM -->
+
+                <button
+                    type="button"
+                    id="resetValueBtn"
+                    class="reset-value-btn"
+                    disabled
+                >
+                    Redeem / Reset Value
+                </button>
+
+
+                <!-- MESSAGE -->
+
+                <div
+                    id="valueMessage"
+                    class="value-message"
+                ></div>
+
+
+                <!-- BACK BUTTON -->
+
+                <button
+                    type="button"
+                    class="back-main-btn"
+                    onclick="window.location.href='index.html'"
+                >
+                    ← Back to Main Page
+                </button>
+
+            </main>
+
+
+            <!-- RIGHT SIDE LOGO -->
+
+            <aside class="logo-section">
+
+                <img
+                    src="logo.png"
+                    alt="Srinivasa Mart Logo"
+                    class="shop-logo"
+                >
+
+                <h2>
+                    Srinivasa Mart
+                </h2>
+
+                <p>
+                    Fresh • Quality • Everyday
+                </p>
+
+            </aside>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            Srinivasa Mart © 2026
+        </footer>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

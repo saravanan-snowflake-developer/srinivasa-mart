@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Srinivasa Mart - New Sale</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="app-container">
+
+        <div class="main-layout">
+
+            <!-- LEFT SIDE -->
+
+            <main class="sale-card">
+
+                <!-- HEADER -->
+
+                <div class="card-header">
+
+                    <div class="header-top">
+
+                        <div class="header-title">
+
+                            <h1>Srinivasa Mart</h1>
+
+                            <p>Grocery Store</p>
+
+                        </div>
+
+
+                        <!-- CUSTOMER VALUE PAGE BUTTON -->
+
+                        <button
+                            type="button"
+                            class="customer-value-btn"
+                            onclick="window.location.href='customer-value.html'"
+                        >
+                            Customer Value
+                        </button>
+
+                    </div>
+
+
+                    <h2>New Sale</h2>
+
+                    <p>
+                        Enter customer details and sale amount
+                    </p>
+
+                </div>
+
+
+                <!-- NEW SALE FORM -->
+
+                <form id="saleForm">
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Customer Phone Number
+                        </label>
+
+                        <div class="phone-row">
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                maxlength="15"
+                                placeholder="Enter phone number"
+                                autocomplete="off"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="searchBtn"
+                            >
+                                Search
+                            </button>
+
+                        </div>
+
+                        <div
+                            id="customerStatus"
+                            class="customer-status"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="customerName">
+                            Customer Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Enter customer name"
+                            autocomplete="off"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- AMOUNT -->
+
+                    <div class="form-group">
+
+                        <label for="totalAmount">
+                            Total Amount
+                        </label>
+
+                        <div class="amount-input">
+
+                            <span>₹</span>
+
+                            <input
+                                type="number"
+                                id="totalAmount"
+                                placeholder="0.00"
+                                min="0.01"
+                                step="0.01"
+                                required
+                            >
+
+                        </div>
+
+                        <div
+                            id="valuePreview"
+                            class="value-preview"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- PAYMENT -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Payment Method
+                        </label>
+
+                        <div class="payment-options">
+
+                            <!-- CASH -->
+
+                            <label class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="CASH"
+                                    required
+                                >
+
+                                <span class="payment-box">
+
+                                    <span class="payment-icon">
+                                        💵
+                                    </span>
+
+                                    <span>
+                                        Cash
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+                            <!-- UPI -->
+
+                            <label class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="UPI"
+                                >
+
+                                <span class="payment-box">
+
+                                    <span class="payment-icon">
+                                        📱
+                                    </span>
+
+                                    <span>
+                                        UPI
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SAVE -->
+
+                    <button
+                        type="submit"
+                        id="saveBtn"
+                        class="save-btn"
+                    >
+
+                        <span id="saveBtnText">
+                            Save Sale
+                        </span>
+
+                    </button>
+
+                </form>
+
+
+                <!-- MESSAGE -->
+
+                <div
+                    id="message"
+                    class="message"
+                ></div>
+
+            </main>
+
+
+            <!-- RIGHT SIDE LOGO -->
+
+            <aside class="logo-section">
+
+                <img
+                    src="logo.png"
+                    alt="Srinivasa Mart Logo"
+                    class="shop-logo"
+                >
+
+                <h2>Srinivasa Mart</h2>
+
+                <p>
+                    Fresh • Quality • Everyday
+                </p>
+
+            </aside>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            Srinivasa Mart © 2026
+        </footer>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

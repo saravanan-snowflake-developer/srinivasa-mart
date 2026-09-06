@@ -1,0 +1,930 @@
+/* ==========================================
+   SRINIVASA MART - GLOBAL STYLE
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    min-height: 100vh;
+}
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ==========================================
+   MAIN LAYOUT
+   ========================================== */
+
+.main-layout {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 35px 50px;
+}
+
+
+/* ==========================================
+   SALE CARD
+   ========================================== */
+
+.sale-card {
+    width: 620px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   MAIN PAGE HEADER
+   ========================================== */
+
+.card-header {
+    margin-bottom: 28px;
+}
+
+.header-top {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.header-title {
+    flex: 1;
+}
+
+.header-title h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.header-title p {
+    color: #777;
+    font-size: 14px;
+}
+
+.card-header h2 {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.card-header > p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   CUSTOMER VALUE BUTTON - HEADER
+   ========================================== */
+
+.customer-value-btn {
+    height: 45px;
+
+    min-width: 150px;
+
+    padding: 0 18px;
+
+    border: 1px solid #222;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.customer-value-btn:hover {
+    background: #222;
+    color: white;
+}
+
+
+/* ==========================================
+   FORM
+   ========================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* ==========================================
+   INPUTS
+   ========================================== */
+
+input[type="text"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+
+    height: 48px;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 9px;
+
+    padding: 0 14px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: white;
+}
+
+input:focus {
+    border-color: #333;
+}
+
+input[readonly] {
+    background: #f5f6f7;
+}
+
+
+/* ==========================================
+   PHONE ROW
+   ========================================== */
+
+.phone-row {
+    display: flex;
+
+    width: 100%;
+
+    gap: 10px;
+}
+
+.phone-row input {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.phone-row button {
+    min-width: 95px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 0 18px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background: #222;
+
+    color: white;
+}
+
+.phone-row button:hover {
+    opacity: 0.9;
+}
+
+.phone-row button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   CUSTOMER STATUS
+   ========================================== */
+
+.customer-status {
+    min-height: 20px;
+
+    margin-top: 7px;
+
+    font-size: 13px;
+}
+
+.customer-status.success {
+    color: #16803c;
+}
+
+.customer-status.error {
+    color: #d62828;
+}
+
+.customer-status.new {
+    color: #777;
+}
+
+
+/* ==========================================
+   AMOUNT
+   ========================================== */
+
+.amount-input {
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+}
+
+.amount-input span {
+    padding-left: 14px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.amount-input input {
+    border: none;
+
+    height: 46px;
+
+    border-radius: 0;
+}
+
+.amount-input input:focus {
+    border: none;
+}
+
+.value-preview {
+    margin-top: 7px;
+
+    font-size: 13px;
+
+    color: #16803c;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   PAYMENT OPTIONS
+   ========================================== */
+
+.payment-options {
+    display: flex;
+
+    gap: 15px;
+}
+
+.payment-option {
+    flex: 1;
+
+    cursor: pointer;
+}
+
+.payment-option input {
+    display: none;
+}
+
+.payment-box {
+    height: 65px;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.payment-option input:checked + .payment-box {
+    border-color: #222;
+
+    background: #f3f3f3;
+}
+
+.payment-icon {
+    font-size: 23px;
+}
+
+
+/* ==========================================
+   SAVE BUTTON
+   ========================================== */
+
+.save-btn {
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+}
+
+.save-btn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   GENERAL MESSAGE
+   ========================================== */
+
+.message {
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.message.success {
+    color: #16803c;
+}
+
+.message.error {
+    color: #d62828;
+}
+
+
+/* ==========================================
+   CUSTOMER VALUE PAGE
+   ========================================== */
+
+.customer-value-page {
+    width: 620px;
+}
+
+
+/* ==========================================
+   CUSTOMER VALUE HEADER
+   ========================================== */
+
+.customer-value-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+}
+
+.customer-value-header h1 {
+    font-size: 30px;
+
+    margin-bottom: 6px;
+}
+
+.customer-value-header p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   BACK BUTTON
+   ========================================== */
+
+.back-btn {
+    height: 45px;
+
+    min-width: 110px;
+
+    padding: 0 18px;
+
+    border: 1px solid #222;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: #222;
+
+    color: white;
+}
+
+
+/* ==========================================
+   CUSTOMER VALUE PHONE SEARCH
+   ========================================== */
+
+.customer-value-page .phone-row {
+    display: flex;
+
+    width: 100%;
+
+    gap: 10px;
+}
+
+.customer-value-page .phone-row input[type="tel"] {
+    flex: 1;
+
+    width: auto;
+
+    min-width: 0;
+
+    height: 60px;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 10px;
+
+    padding: 0 16px;
+
+    font-size: 18px;
+}
+
+.customer-value-page #checkCustomerValueBtn {
+    flex: 0 0 140px;
+
+    width: 140px;
+
+    min-width: 140px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.customer-value-page #checkCustomerValueBtn:hover {
+    opacity: 0.9;
+}
+
+.customer-value-page #checkCustomerValueBtn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   CUSTOMER VALUE NAME
+   ========================================== */
+
+.customer-value-page input[readonly] {
+    width: 100%;
+
+    height: 60px;
+
+    background: #f5f6f7;
+
+    font-size: 17px;
+}
+
+
+/* ==========================================
+   CUSTOMER VALUE DISPLAY
+   ========================================== */
+
+.customer-value-display {
+    margin: 25px 0;
+
+    padding: 25px;
+
+    min-height: 105px;
+
+    border-radius: 12px;
+
+    background: white;
+
+    border: 1px solid #e1e4e8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.customer-value-display span {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #555;
+}
+
+.customer-value-display strong {
+    font-size: 38px;
+
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   REDEEM / RESET BUTTON
+   ========================================== */
+
+.reset-value-btn {
+    width: 100%;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #b42318;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.reset-value-btn:hover {
+    background: #8f1c13;
+}
+
+.reset-value-btn:disabled {
+    background: #c9c9c9;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   VALUE MESSAGE
+   ========================================== */
+
+.value-message {
+    min-height: 20px;
+
+    margin-top: 12px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.value-message.success {
+    color: #16803c;
+}
+
+.value-message.error {
+    color: #d62828;
+}
+
+
+/* ==========================================
+   BACK TO MAIN PAGE
+   ========================================== */
+
+.back-main-btn {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 20px;
+
+    border: 1px solid #222;
+
+    border-radius: 10px;
+
+    background: white;
+
+    color: #222;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.back-main-btn:hover {
+    background: #222;
+
+    color: white;
+}
+
+
+/* ==========================================
+   RIGHT SIDE LOGO
+   ========================================== */
+
+.logo-section {
+    width: 380px;
+
+    text-align: center;
+}
+
+.shop-logo {
+    width: 330px;
+
+    height: 330px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 20px;
+}
+
+.logo-section h2 {
+    font-size: 26px;
+
+    margin-bottom: 8px;
+}
+
+.logo-section p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    text-align: center;
+
+    padding: 15px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1000px) {
+
+    .main-layout {
+        gap: 30px;
+
+        padding: 30px;
+    }
+
+    .sale-card {
+        width: 560px;
+    }
+
+    .logo-section {
+        width: 280px;
+    }
+
+    .shop-logo {
+        width: 260px;
+
+        height: 260px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 750px) {
+
+    .main-layout {
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .sale-card {
+        width: 100%;
+
+        max-width: 620px;
+    }
+
+    .logo-section {
+        width: 100%;
+
+        order: -1;
+    }
+
+    .shop-logo {
+        width: 220px;
+
+        height: 220px;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+   ========================================== */
+
+@media (max-width: 520px) {
+
+    .sale-card {
+        padding: 25px 20px;
+    }
+
+
+    /* MAIN HEADER */
+
+    .header-top {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+    .customer-value-btn {
+        width: 100%;
+    }
+
+
+    /* MAIN PHONE */
+
+    .phone-row {
+        flex-wrap: wrap;
+    }
+
+    .phone-row input {
+        width: 100%;
+
+        flex-basis: 100%;
+    }
+
+    .phone-row button {
+        flex: 1;
+
+        height: 45px;
+    }
+
+
+    /* CUSTOMER VALUE HEADER */
+
+    .customer-value-header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .back-btn {
+        width: 100%;
+    }
+
+
+    /* CUSTOMER VALUE PHONE */
+
+    .customer-value-page .phone-row {
+        flex-wrap: wrap;
+    }
+
+    .customer-value-page .phone-row input[type="tel"] {
+        width: 100%;
+
+        flex-basis: 100%;
+
+        height: 55px;
+    }
+
+    .customer-value-page #checkCustomerValueBtn {
+        width: 100%;
+
+        min-width: 100%;
+
+        flex: 1 1 100%;
+
+        height: 50px;
+    }
+
+
+    /* PAYMENT */
+
+    .payment-options {
+        flex-direction: column;
+    }
+
+    .payment-box {
+        height: 55px;
+    }
+
+
+    /* CUSTOMER VALUE */
+
+    .customer-value-panel {
+        padding: 22px;
+    }
+
+    .customer-value-display strong {
+        font-size: 30px;
+    }
+}
